@@ -1,11 +1,11 @@
 import React from 'react';
 import JobCard from './components/JobCard';
-import design from './dist/assets/Frame.png';
-import engineer from './dist/assets/Frame-1.png';
-import operation from './dist/assets/Frame-2.png';
-import people from './dist/assets/Frame-3.png';
-import sales from './dist/assets/Frame-4.png';
-import university from './dist/assets/Frame-5.png';
+import engineer from './assets/Frame-1.png';
+import operation from './assets/Frame-2.png';
+import people from './assets/Frame-3.png';
+import sales from './assets/Frame-4.png';
+import university from './assets/Frame-5.png';
+import design from './assets/Frame.png';
 
 const position = [
   {name: "Design", nums: 4, icon: design, bgGradient: "bg-bgDesign", bgPosition: null},

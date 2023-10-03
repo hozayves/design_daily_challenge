@@ -1,5 +1,5 @@
 import React from 'react';
-import Frame1 from '../dist/assets/Frame.png';
+import Frame1 from '../assets/Frame.png';
 
 const JobCard = ({name, nums, icon, bgGradient, bgPosition}) => {
   return (
