@@ -26,28 +26,30 @@ function App() {
   ]
 
   return (
-    <section className='min-h-full w-full flex flex-col items-left gap-3 bg-[#EFF0F1] shadow-section'>
-      <h1 className='text-heading text-[2rem] leading-normal font-bold font-Merriweather p-4'>Popular Collections</h1>
-      <div className='flex gap-2 items-start flex-wrap p-4'>
+    <>
+    <section className='min-h-full w-full flex flex-col items-left gap-3 bg-[#EFF0F1] shadow-section lg:rounded-3xl lg:p-12 lg:gap-3 xl:p-7 xl:gap-2'>
+      <h1 className='text-heading text-[2rem] leading-normal font-bold font-Merriweather p-4 lg:p-0'>Popular Collections</h1>
+      <div className='flex gap-2 items-start flex-wrap p-4 lg:p-0'>
         { popular?.map(item => {
           return <button key={item} className='flex p-[0.625rem] items-start gap-[0.625rem] rounded-lg bg-[#ffffff] capitalize'>{ item }</button>
         })}
       </div>
-      <article className='mt-7 flex flex-col items-start gap-16 w-full p-4'>
+      <article className='mt-7 flex flex-col items-start gap-12 w-full p-4 sm:items-center md:flex-row md:flex-wrap md:gap-2 md:justify-center lg:justify-center lg:gap-12 lg:p-0'>
         {collections?.map(({id, name, collection, h_1, h_2, h_3, h_4}) => (
-          <div key={id} className='flex p-3 w-full flex-col items-start gap-6 rounded-[2rem] bg-[#fff]'>
-            <div className='w-full'>
-              <img className='w-full h-64 rounded-[1.5rem]' src={ h_1 } alt="" />
+          <div key={id} className='flex p-6 w-full flex-col items-start gap-6 rounded-[2rem] 
+          bg-[#fff] sm:w-[455px] md:w-[361px] lg:w-[300px] lg:gap-6'>
+            <div className='w-full lg:h-[10rem]'>
+              <img className='w-full rounded-[1.5rem]' src={ h_1 } alt="" />
             </div>
-            <div className='flex gap-4 w-full'>
-              <div className='w-[7.4375rem]  h-[6.0625rem] rounded-3xl flex-shrink flex-grow '>
-              <img className='w-full h-[6.0625rem]' src={ h_2} alt="" />
+            <div className='flex gap-6 w-full'>
+              <div className='w-[7.4375rem]  h-auto lg:h-auto rounded-3xl'>
+                <img className='w-[7.4375rem]  h-[4rem]' src={ h_2} alt="" />
               </div>
-              <div className='w-[7.4375rem]  h-[6.0625rem] rounded-3xl flex-shrink flex-grow '>
-              <img className='w-full h-[6.0625rem]' src={ h_3} alt="" />
+              <div className='w-[7.4375rem]  h-auto rounded-3xl lg:h-auto'>
+                <img className='w-[7.4375rem]  h-[4rem]' src={ h_3} alt="" />
               </div>
-              <div className='w-[7.4375rem]  h-[6.0625rem] rounded-3xl flex-shrink flex-grow '>
-              <img className='w-full h-[6.0625rem]' src={ h_4} alt="" />
+              <div className='w-[7.4375rem] h-auto rounded-3xl md:self-start lg:h-auto'>
+                <img className='w-[7.4375rem]  h-[4rem] self-left' src={ h_4} alt="" />
               </div>
             </div>
             <div className='flex w-full items-center gap-4'>
@@ -61,6 +63,15 @@ function App() {
         ))}
       </article>
     </section>
+    <footer className="gap-1 text-2xl  flex md:flex-col  fixed border border-[#d7d7d7] lg:top-[50%] top-5 right-5 bg-[#e7e7e7] shadow-section w-auto justify-center items-center p-1 rounded-xl">
+    <a className='flex justify-center items-center p-2 hover:opacity-80' href="https://www.twitter.com/hozayves" target="_blank">
+      <ion-icon name="logo-twitter"></ion-icon>
+    </a>
+    <a className='flex justify-center items-center p-2 hover:opacity-80' href="https://github.com/hozayves/design_daily_challenge/tree/main/popular-collection" target="_blank">
+      <ion-icon name="logo-github"></ion-icon>
+    </a>
+  </footer>
+  </>
   )
 }
 
