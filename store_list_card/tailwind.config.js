@@ -13,7 +13,7 @@ export default {
         borderColor: "#2A2753",
         locationColor: "#756BFF",
         openColor: "#00BD9B",
-        closecolor: "#FF5EAB"
+        closeColor: "#FF5EAB"
       },
       fontFamily: {
         Mulish: ["Mulish", "sans-serif"]
