@@ -570,14 +570,6 @@ video {
   height: auto;
 }
 
-.h-full {
-  height: 100%;
-}
-
-.min-h-full {
-  min-height: 100%;
-}
-
 .w-\[30px\] {
   width: 30px;
 }
@@ -614,32 +606,28 @@ video {
   gap: 0.25rem;
 }
 
-.gap-2 {
-  gap: 0.5rem;
+.gap-10 {
+  gap: 2.5rem;
 }
 
-.gap-3 {
-  gap: 0.75rem;
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .gap-4 {
   gap: 1rem;
 }
 
-.gap-6 {
-  gap: 1.5rem;
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .gap-8 {
   gap: 2rem;
 }
 
-.gap-10 {
-  gap: 2.5rem;
-}
-
-.gap-5 {
-  gap: 1.25rem;
+.rounded-2xl {
+  border-radius: 1rem;
 }
 
 .rounded-full {
@@ -648,18 +636,6 @@ video {
 
 .rounded-xl {
   border-radius: 0.75rem;
-}
-
-.rounded-lg {
-  border-radius: 0.5rem;
-}
-
-.rounded-3xl {
-  border-radius: 1.5rem;
-}
-
-.rounded-2xl {
-  border-radius: 1rem;
 }
 
 .rounded-l-full {
@@ -678,19 +654,6 @@ video {
 
 .rounded-br-\[30px\] {
   border-bottom-right-radius: 30px;
-}
-
-.border-4 {
-  border-width: 4px;
-}
-
-.border {
-  border-width: 1px;
-}
-
-.border-r-brightRed {
-  --tw-border-opacity: 1;
-  border-right-color: hsl(356 69% 56% / var(--tw-border-opacity));
 }
 
 .bg-facebook {
@@ -723,6 +686,11 @@ video {
   background-color: hsl(203 89% 53% / var(--tw-bg-opacity));
 }
 
+.bg-veryDarkBlueBG {
+  --tw-bg-opacity: 1;
+  background-color: hsl(230 17% 14% / var(--tw-bg-opacity));
+}
+
 .bg-youtube {
   --tw-bg-opacity: 1;
   background-color: hsl(348 97% 39% / var(--tw-bg-opacity));
@@ -748,10 +716,6 @@ video {
 
 .p-6 {
   padding: 1.5rem;
-}
-
-.p-4 {
-  padding: 1rem;
 }
 
 .px-2 {
@@ -792,6 +756,16 @@ video {
   line-height: 2rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
@@ -806,24 +780,9 @@ video {
   line-height: 1.75rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
 }
 
 .font-bold {
@@ -873,22 +832,37 @@ video {
   color: hsl(163 72% 41% / var(--tw-text-opacity));
 }
 
-.text-lightVeryDarkBlueText {
+:is(.dark .dark\:bg-veryDarkBlueBG) {
+  --tw-bg-opacity: 1;
+  background-color: hsl(230 17% 14% / var(--tw-bg-opacity));
+}
+
+:is(.dark .dark\:bg-veryDarkBlueTop) {
+  --tw-bg-opacity: 1;
+  background-color: hsl(232 19% 15% / var(--tw-bg-opacity));
+}
+
+:is(.dark .dark\:bg-lightGrayishBlueCard) {
+  --tw-bg-opacity: 1;
+  background-color: hsl(227 47% 96% / var(--tw-bg-opacity));
+}
+
+:is(.dark .dark\:bg-darkDesaturatedBlueCard) {
+  --tw-bg-opacity: 1;
+  background-color: hsl(228 28% 20% / var(--tw-bg-opacity));
+}
+
+:is(.dark .dark\:text-whiteText) {
   --tw-text-opacity: 1;
-  color: hsl(230 17% 14% / var(--tw-text-opacity));
+  color: hsl(0 0% 100% / var(--tw-text-opacity));
+}
+
+:is(.dark .dark\:text-lightDarkGrayishBlueText) {
+  --tw-text-opacity: 1;
+  color: hsl(228 12% 44% / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {
-  .sm\:bg-instagramFrom {
-    --tw-bg-opacity: 1;
-    background-color: hsl(37 97% 70% / var(--tw-bg-opacity));
-  }
-
-  .sm\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
-
   .sm\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
@@ -896,52 +870,36 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:w-\[200px\] {
-    width: 200px;
+  .md\:top-48 {
+    top: 12rem;
   }
 
-  .md\:w-\[300px\] {
-    width: 300px;
+  .md\:top-44 {
+    top: 11rem;
   }
 
-  .md\:w-\[350px\] {
-    width: 350px;
+  .md\:top-40 {
+    top: 10rem;
   }
 
-  .md\:w-\[320px\] {
-    width: 320px;
+  .md\:top-36 {
+    top: 9rem;
   }
 
-  .md\:w-\[330px\] {
-    width: 330px;
+  .md\:hidden {
+    display: none;
   }
 
-  .md\:w-\[340px\] {
-    width: 340px;
+  .md\:h-auto {
+    height: auto;
   }
 
-  .md\:w-\[360px\] {
-    width: 360px;
+  .md\:h-40 {
+    height: 10rem;
   }
 
-  .md\:w-\[355px\] {
-    width: 355px;
-  }
-
-  .md\:w-\[335px\] {
-    width: 335px;
-  }
-
-  .md\:w-\[310px\] {
-    width: 310px;
-  }
-
-  .md\:w-\[315px\] {
-    width: 315px;
-  }
-
-  .md\:w-\[318px\] {
-    width: 318px;
+  .md\:h-44 {
+    height: 11rem;
   }
 
   .md\:w-\[325px\] {
@@ -964,14 +922,20 @@ video {
     gap: 1.5rem;
   }
 
-  .md\:bg-darkToggleTo {
-    --tw-bg-opacity: 1;
-    background-color: hsl(146 68% 55% / var(--tw-bg-opacity));
+  .md\:gap-4 {
+    gap: 1rem;
   }
 
-  .md\:px-32 {
-    padding-left: 8rem;
-    padding-right: 8rem;
+  .md\:gap-2 {
+    gap: 0.5rem;
+  }
+
+  .md\:self-start {
+    align-self: flex-start;
+  }
+
+  .md\:border {
+    border-width: 1px;
   }
 
   .md\:px-10 {
@@ -979,39 +943,9 @@ video {
     padding-right: 2.5rem;
   }
 
-  .md\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
-  .md\:px-8 {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
-  .md\:px-20 {
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
-  }
-
-  .md\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
-  }
-
-  .md\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-
-  .md\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
   }
 
   .md\:text-sm {
@@ -1021,53 +955,12 @@ video {
 }
 
 @media (min-width: 1024px) {
-  .lg\:w-\[350px\] {
-    width: 350px;
-  }
-
-  .lg\:w-\[370px\] {
-    width: 370px;
-  }
-
-  .lg\:w-\[320px\] {
-    width: 320px;
-  }
-
-  .lg\:w-\[300px\] {
-    width: 300px;
-  }
-
-  .lg\:w-\[280px\] {
-    width: 280px;
-  }
-
-  .lg\:w-\[400px\] {
-    width: 400px;
-  }
-
   .lg\:w-\[450px\] {
     width: 450px;
-  }
-
-  .lg\:bg-lineGreen {
-    --tw-bg-opacity: 1;
-    background-color: hsl(163 72% 41% / var(--tw-bg-opacity));
   }
 }
 
 @media (min-width: 1280px) {
-  .xl\:w-\[250px\] {
-    width: 250px;
-  }
-
-  .xl\:w-\[270px\] {
-    width: 270px;
-  }
-
-  .xl\:w-\[275px\] {
-    width: 275px;
-  }
-
   .xl\:w-\[280px\] {
     width: 280px;
   }
@@ -1076,31 +969,7 @@ video {
     gap: 0.75rem;
   }
 
-  .xl\:gap-2 {
-    gap: 0.5rem;
-  }
-
-  .xl\:gap-0 {
-    gap: 0px;
-  }
-
   .xl\:gap-4 {
     gap: 1rem;
-  }
-
-  .xl\:gap-6 {
-    gap: 1.5rem;
-  }
-
-  .xl\:bg-lineGreen {
-    --tw-bg-opacity: 1;
-    background-color: hsl(163 72% 41% / var(--tw-bg-opacity));
-  }
-}
-
-@media (min-width: 1536px) {
-  .\32xl\:bg-lineGreen {
-    --tw-bg-opacity: 1;
-    background-color: hsl(163 72% 41% / var(--tw-bg-opacity));
   }
 }

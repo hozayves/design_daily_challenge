@@ -1,9 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./src/**/*.jsx"
+    "./src/**/*.jsx",
+    "./*.html"
   ],
+  darkMode: "class",
   theme: {
+    
     colors: {
       darkToggleFrom: "hsl(210, 78%, 56%)",
       darkToggleTo: "hsl(146, 68%, 55%)",
