@@ -5,6 +5,9 @@ export default {
     "./*.html"
   ],
   theme: {
+    fontFamily: {
+      Inter: ["Inter", "sans-serif"]
+    },
     extend: {
       colors: {
         bgColor: "#131619"
